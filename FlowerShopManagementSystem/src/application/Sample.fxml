@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+	<children>
+		<AnchorPane fx:id="main_form" prefHeight="440.0" prefWidth="650.0">
+			<children>
+				<AnchorPane layoutX="328.0" prefHeight="440.0" prefWidth="325.0" styleClass="right-form" stylesheets="@loginDesign.css">
+					<children>
+						<ImageView fitHeight="134.0" fitWidth="128.0" layoutX="99.0" layoutY="94.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../images/user.png" />
+							</image>
+						</ImageView>
+						<Label layoutX="99.0" layoutY="46.0" prefHeight="34.0" prefWidth="120.0" text="GİRİŞ YAP" textAlignment="CENTER" textFill="#000000c9" textOverrun="CENTER_ELLIPSIS">
+							<font>
+								<Font name="Times New Roman" size="24.0" />
+							</font>
+						</Label>
+						<PasswordField fx:id="password" layoutX="63.0" layoutY="286.0" prefHeight="26.0" prefWidth="208.0" promptText="Şifre" styleClass="textfield" stylesheets="@loginDesign.css" />
+						<Button fx:id="loginBtn" layoutX="60.0" layoutY="332.0" mnemonicParsing="false" onAction="#login" prefHeight="26.0" prefWidth="208.0" styleClass="login-btn" stylesheets="@loginDesign.css" text="Giriş Yap" />
+						<TextField fx:id="username" layoutX="63.0" layoutY="241.0" prefHeight="26.0" prefWidth="208.0" promptText="Kullanıcı Adı" styleClass="textfield" stylesheets="@loginDesign.css" />
+						<Button fx:id="close" layoutX="287.0" layoutY="-3.0" mnemonicParsing="false" onAction="#close" prefHeight="34.0" prefWidth="29.0" styleClass="close" stylesheets="@loginDesign.css">
+							<graphic>
+								<ImageView fitHeight="28.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="@../images/kapat.png" />
+									</image>
+								</ImageView>
+							</graphic>
+						</Button>
+					</children>
+				</AnchorPane>
+				<AnchorPane layoutX="2.0" mouseTransparent="true" prefHeight="440.0" prefWidth="325.0" styleClass="left-form" stylesheets="@loginDesign.css">
+					<children>
+						<ImageView fitHeight="242.0" fitWidth="266.0" layoutX="42.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/login.png" />
+                     </image>
+						</ImageView>
+						<Label layoutX="87.0" layoutY="47.0" prefHeight="39.0" prefWidth="152.0" text="Çiçek Evi">
+							<font>
+								<Font name="Times New Roman" size="36.0" />
+							</font>
+						</Label>
+                  <Label layoutX="41.0" layoutY="336.0" text="Yönetim Sistemi">
+                     <font>
+                        <Font name="Times New Roman" size="36.0" />
+                     </font>
+                  </Label>
+					</children>
+				</AnchorPane>
+			</children>
+		</AnchorPane>
+	</children>
+</StackPane>
